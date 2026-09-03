@@ -135,23 +135,6 @@ class FeedForwardNetwork(Layer):
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 class TransformerBlock(Layer):
 
     def __init__(
@@ -197,11 +180,7 @@ class TransformerBlock(Layer):
         x,
         mask=None,
         training=None
-    ):
-
-        # ----------------------------------------------------
-        # Self Attention
-        # ----------------------------------------------------
+    )
 
         attention_output = self.attention(
             x,
@@ -236,15 +215,6 @@ class TransformerBlock(Layer):
         )
 
         return x
-
-
-
-
-
-
-
-
-
 
 
 class AIWithThiru(Model):
